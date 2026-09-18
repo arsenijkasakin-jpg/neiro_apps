@@ -1,8 +1,10 @@
 {
   "wake_word": "джарвис",
   "language": "ru-RU",
-  "ollama_url": "http://127.0.0.1:11434/api/chat",
+  "ollama_url": "http://127.0.0.1:11434",
   "ollama_model": "qwen2.5:3b",
   "listen_timeout": 5,
-  "phrase_time_limit": 10
+  "phrase_time_limit": 10,
+  "tts_rate": 185,
+  "tts_volume": 1.0
 }
