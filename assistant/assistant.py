@@ -49,7 +49,11 @@ class Core:
             pass
 
     def base_url(self):
-        return self.cfg.get("ollama_url",DEFAULT["ollama_url"]).rstrip("/")
+        url = self.cfg.get("ollama_url", DEFAULT["ollama_url"]).strip().rstrip("/")
+        for suffix in ("/api/chat", "/api/tags", "/api"):
+            if url.endswith(suffix):
+                url = url[:-len(suffix)]
+        return url
 
     def models(self):
         r=requests.get(self.base_url()+"/api/tags",timeout=5)
