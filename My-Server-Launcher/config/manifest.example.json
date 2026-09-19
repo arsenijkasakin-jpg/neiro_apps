@@ -1,0 +1,1 @@
+{"version":"0.1.0","minecraftVersion":"1.21.1","loader":"NeoForge","loaderVersion":"21.1.x","serverAddress":"play.example.ru:25565","files":[{"path":"mods/example.jar","url":"https://example.ru/files/mods/example.jar"},{"path":"config/example.toml","url":"https://example.ru/files/config/example.toml"}]}
