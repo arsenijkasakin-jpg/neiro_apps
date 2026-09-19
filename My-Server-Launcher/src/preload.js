@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require("electron");contextBridge.exposeInMainWorld("launcher",{getConfig:()=>ipcRenderer.invoke("config:get"),saveConfig:c=>ipcRenderer.invoke("config:save",c),syncManifest:u=>ipcRenderer.invoke("manifest:sync",u),launch:c=>ipcRenderer.invoke("launcher:launch",c),openExternal:u=>ipcRenderer.invoke("shell:open",u)});
